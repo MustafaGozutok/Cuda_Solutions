@@ -9,6 +9,20 @@ Temiz ve son sürüm:
  - Minimal bağımlılıklar: opencv, numpy, ultralytics
 """
 
+"""
+python3 dualfg_botsort_final.py \
+  --video video1.mp4 \
+  --yolo-model yolov8n.pt \
+  --tracker-config botsort.yaml \
+  --with-reid \
+  --reid-model auto \
+  --mask mask.png \
+  --display \
+  --conf-thresh 0.50 \
+  --min-static-frames 75 \
+  --device cuda
+"""
+
 from pathlib import Path
 import argparse
 import time
